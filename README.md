@@ -22,13 +22,13 @@ were used are listed below.
 
 
 
-This is a Next.js project bootstrapped with create-next-app.
+# This is a Next.js project bootstrapped with create-next-app.
 
-Getting Started
+## Getting Started
 // "build": "next build", // "start": "next start", First, run the development server:
 
 npm run dev
-# or
+### or
 yarn dev
 Open http://localhost:3000 with your browser to see the result.
 
