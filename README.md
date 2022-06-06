@@ -4,6 +4,9 @@
 #### Cloudinary URI Keys(Used to manage medias used in development)
 
 ## BERT Detection Model: https://github.com/abrh119/BERT_API
+### All the comments that are passed thru the model are saved in a mongoDB for further model training and dataset creation and db.py Code can be found [here](here:https://github.com/abrh119/BERT_API/blob/main/db.py)
+#### Adminpanel Link: 
+
 Social Media Web App with an NLP Hate Speech Classification BERT Based Model Integrated to Detect Comment Toxicity
 
 This component is a social media web application. It depicts the typical use case of a social media application. Which is the uploading of a post,reacting to it and
