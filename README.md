@@ -1,11 +1,10 @@
 # KamakNe_Social_Web_App
 ## Requirements
-#### MongoDB
-#### Cloudinary URI Keys(Used to manage medias used in development)
-
-## BERT Detection Model: https://github.com/abrh119/BERT_API
-### All the comments that are passed thru the model are saved in a mongoDB for further model training and dataset creation and db.py Code can be found [here](https://github.com/abrh119/BERT_API/blob/main/db.py)
-#### Adminpanel Link: 
+#### 1: MongoDB
+#### 2: Cloudinary URI Keys(Used to manage medias used in development)
+#### 3: BERT Detection Model: https://github.com/abrh119/BERT_API
+#### 4: All the comments that are passed thru the model are saved in a mongoDB for further model training and dataset creation and db.py Code can be found [here](https://github.com/abrh119/BERT_API/blob/main/db.py)
+#### 5: Adminpanel Link: 
 
 Social Media Web App with an NLP Hate Speech Classification BERT Based Model Integrated to Detect Comment Toxicity
 
@@ -18,10 +17,10 @@ This application is written in NEXT Js for both the client and Node Js for the s
 MongoDb as the database management system. Furthermore, this application makes use
 of a number of well-known libraries to improve its usefulness. Some of the libraries that
 were used are listed below.
-● Express Js
-● Mongoose
-● Redux and Redux Toolkit for state management and caching mechanisms for HTTP requests
-● Formik , Yup for form validation
+- Express Js
+- Mongoose
+- Redux and Redux Toolkit for state management and caching mechanisms for HTTP requests
+- Formik , Yup for form validation
 
 
 
