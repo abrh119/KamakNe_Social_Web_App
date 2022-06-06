@@ -1,4 +1,10 @@
 # KamakNe_Social_Web_App
+## Requirements
+
+#### MongoDB
+#### Cloudinary URI Keys(Used to manage medias used in development)
+
+## BERT Detection Model: https://github.com/abrh119/BERT_API
 Social Media Web App with an NLP Hate Speech Classification BERT Based Model Integrated to Detect Comment Toxicity
 
 This component is a social media web application. It depicts the typical use case of a social media application. Which is the uploading of a post,reacting to it and
