@@ -6,6 +6,9 @@
 #### 4: All the comments that are passed thru the model are saved in a mongoDB for further model training and dataset creation and db.py Code can be found [here](https://github.com/abrh119/BERT_API/blob/main/db.py)
 #### 5: Adminpanel Link: https://github.com/abrh119/KamakNe_Detoxify_Admin_Panel/ (The Admin panel created for the this app to manage the comments saved in tabular manner and is able to export the comments in CSV format with the hate speech model annoted results)
 
+### TEST
+https://user-images.githubusercontent.com/59731843/172170614-90a63a42-739b-4c25-825d-36ec4259f186.mp4
+
 Social Media Web App with an NLP Hate Speech Classification BERT Based Model Integrated to Detect Comment Toxicity
 
 This component is a social media web application. It depicts the typical use case of a social media application. Which is the uploading of a post,reacting to it and
