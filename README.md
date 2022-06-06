@@ -20,6 +20,8 @@ were used are listed below.
 ● Redux and Redux Toolkit for state management and caching mechanisms for HTTP requests
 ● Formik , Yup for form validation
 
+
+
 This is a Next.js project bootstrapped with create-next-app.
 
 Getting Started
