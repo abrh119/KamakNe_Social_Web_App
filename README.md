@@ -1,4 +1,4 @@
-# KamakNe_Social_Web_App
+# KamakNe Social Web App
 ## Requirements
 #### 1: MongoDB
 #### 2: Cloudinary URI Keys(Used to manage medias used in development)
