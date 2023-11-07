@@ -11,7 +11,8 @@ const {
   newCommentNotification,
   removeCommentNotification,
 } = require("../utils/notificationActions");
-const PredictionApi = process.env.PREDICTION_API_URL;
+//const PredictionApi = process.env.PREDICTION_API_URL;
+const PredictionApi = "http://127.0.0.1:8000/predict/";
 const axios = require("axios");
 const normalizeText = require("../utils/normalizeText");
 
@@ -264,8 +265,15 @@ router.post("/comment/:postId", authMiddleware, async (req, res) => {
     if (text.length < 1)
       return res.status(401).send("Comment should be atleast 1 character");
     const prediction = await axios.post(PredictionApi, { comment: text });
+    console.log(prediction)
+
+
     const predictionObj = prediction.data.result;
+    console.log(predictionObj + " These are predictionObj")
+
     const predictionKeys = Object.keys(predictionObj);
+    console.log(predictionKeys)
+
     const isGoodText = predictionKeys.every((val) => predictionObj[val] < 80);
     const post = await PostModel.findById(postId);
     if (!post) {
@@ -300,11 +308,12 @@ router.post("/comment/:postId", authMiddleware, async (req, res) => {
       return res
         .status(401)
         .send(
-          `Your Comment Has Violated Our Policies. It is flagged as ${flags}`
+          `Your Comment Has Violated Our Policies. It is flagged as ${predictionObj}`
         );
     }
   } catch (error) {
     console.log(error);
+    console.log(predictedLabels);
     return res.status(500).send("Server error");
   }
 });

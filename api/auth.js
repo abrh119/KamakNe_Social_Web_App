@@ -10,7 +10,7 @@ const authMiddleware = require("../middleware/authMiddleware");
 const ChatModel = require("../models/ChatModel");
 const ProfileModel = require("../models/ProfileModel");
 const NotificationModel = require("../models/NotificationModel");
-
+const jwtSecret="kamakneSecret"
 router.get("/", authMiddleware, async (req, res) => {
   const { userId } = req; //in the middleware we had req.userId = userId;
 
@@ -76,7 +76,7 @@ router.post("/", async (req, res) => {
     const payload = { userId: user._id };
     jwt.sign(
       payload,
-      process.env.jwtSecret,
+      jwtSecret,
       { expiresIn: "2d" },
       (err, token) => {
         if (err) throw err;
